@@ -1,0 +1,176 @@
+/* NAVIGATION BAR */
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: #224edd;
+    color: white;
+    padding: 10px;
+    box-sizing:border-box;
+    z-index: 1000;
+    text-align:right;
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display:inline-block;
+  }
+  
+  #navbar a:hover {
+    color: #DDB122;
+  }
+  
+  
+  
+  /*WELCOME SECTION*/
+  #welcome-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #010b35;
+  }
+  #welcome-section h1 {
+    color:white;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  
+  
+  /*PROJECT SECTION*/
+  #projects {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #7f99fe;
+    padding: 0; /* Ensure there's no additional padding */
+    margin: 0; /* Ensure there's no additional margin */
+  }
+  
+  #projects h1 {
+    color: black;
+    margin: 0;
+    padding:25px;
+    font-size: 2.5rem;
+  }
+  
+  #projects h2{
+    font-size:1.10rem;
+    text-align:center;
+    margin-top:240px;
+    
+  }
+  
+  
+  
+  .project-box:hover {
+    background-color: #f0f0f0; /* Light background on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  .project-tile {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Two columns */
+    gap: 20px; /* 10px space between items */
+    width: 100%; /* Full width of the container */
+    max-width: 500px; /* Optional: adjust as needed */
+    padding: 0; /* Ensure no additional padding */
+    margin: 0; /* Ensure no additional margin */
+  }
+  
+  .project-box {
+    display: block;
+    
+    padding: 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Ensure padding/border are included in dimensions */
+    width:100%;
+    max-width:600px;
+    height:300px;
+   
+  }
+  
+  
+  /* Profile Link as Button */
+  #profile-link {
+    display: inline-block; /* Allows padding and background styling */
+    padding: 10px 25px; /* Button padding */
+    font-size: 1rem; /* Font size for the button text */
+    color: white; /* Text color */
+    background-color: #007bff; /* Button background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    border: 1px solid #007bff; /* Border color */
+    transition: background-color 0.3s, color 0.3s; /* Smooth 
+    transition for hover effect */
+    width:65px;
+    align-items:center;
+    margin:20px 20px;
+  }
+  
+  
+  /* CONTACT SECTION */
+  #contact {
+   padding:20px;
+   text-align:center;
+   min-height:100vh;
+   background-color: #010b35;
+  
+   display:flex;
+   flex-direction:column;
+   justify-content:center;
+  }
+  #contact h1 {
+    color:white;
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  #contact p{
+    color:white;
+    font-size:1rem;
+    margin-top:0;
+    margin-bottom:20px;
+  }
+  
+  
+  /* Basic media query */
+  @media (max-width: 768px) {
+    #navbar {
+      padding: 5px;
+    }
+  
+    #navbar a {
+      padding: 5px;
+      font-size: 0.9rem;
+    }
+  
+    #welcome-section h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  
+  
+  /* ICONS */
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+  }
+  
+  .social-icon i {
+    font-size: 30px; /* Adjust size as needed */
+    color: white; /* Adjust color as needed */
+  }
+  
